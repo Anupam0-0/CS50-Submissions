@@ -1,0 +1,34 @@
+Instead of using the online bootstrap 5,
+I have installed the bootstrap files into my local VS code,
+and uploaded all my work together
+
+HTML tags used
+<body>
+<head>
+<title>
+<p>
+<input>
+<a:link>
+<scipt> <style>
+<ul>
+<li>
+<nav>
+<div>
+<class>
+
+
+STYLE tags used
+<background-img>
+<background-color>
+<height> / <width>
+<border> : changing/designing border
+<box-shadow> 
+<font-size>
+<color> : for changing color of text
+
+I have js for two things
+1. To alert when user is being idle for more than 15 sec
+2. DOM manipluation of "submit "button
+
+
+I have used bootstrap for the navbar of my website

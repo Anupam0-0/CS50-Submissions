@@ -1,0 +1,5 @@
+1. If songs.db contains the top 100 songs of one listener that indicates that the person listened to the most popular and trending songs in the last few years.
+
+2. From what I spectated, the aura that match this spotify wrap are :
+    a. Blue i.e, wristful or emotional
+    b. Orange i.e, rebellious and bold type

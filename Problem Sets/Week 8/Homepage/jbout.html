@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FEAE6F;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 100%;
+            max-width: 1000px;
+            margin: 50px auto;
+            background: #F8F4E1;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        p {
+            text-align: center;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-custom navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand nav-left" href="#">Profile</a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link nav-left-text" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item nav-left-text">
+                        <a class="nav-link" href="jbout.html">About me</a>
+                    </li>
+                    <li class="nav-item dropdown nav-left-text">
+                        <a
+                            class="nav-link dropdown-toggle"
+                            href="#"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                        >
+                            My Skills
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="xdefault.html">HTML</a></li>
+                            <li><a class="dropdown-item" href="xdefault.html">CSS</a></li>
+                            <li><a class="dropdown-item" href="xdefault.html">JavaScript</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item nav-left-text">
+                        <a class="nav-link" href="jcontact.html">Contact</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input
+                        class="form-control me-2"
+                        type="search"
+                        placeholder="Search"
+                        aria-label="Search"
+                    />
+                    <button class="btn btn-outline-success btn-custom" onclick="goToDefault()" type="button" type="submit">
+                        <!-- <a class="submit-link" href="xdefault.html"> -->
+                            Search
+                        <!-- </a> -->
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>About Me</h1>
+        <p>Hello! I'm Anupam, an aspiring web developer with a passion for creating dynamic web applications. My journey in web development and programming is fueled by a strong foundation in Data Structures and Algorithms (DSA) and a keen interest in learning and exploring new technologies.</p>
+        <p>Currently, I am undertaking a 57-day coding challenge to enhance my skills in both DSA and web development. My projects, showcased on GitHub, range from intricate algorithms to complete web applications built with HTML, CSS, and JavaScript.</p>
+        <p>I believe in continuous learning and am eager to collaborate and contribute to innovative projects. Feel free to explore my work and reach out if you'd like to connect or have any questions.</p>
+    </div>
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+```

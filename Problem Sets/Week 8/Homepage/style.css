@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    background-image: url(dp.jpg);
+}
+
+.navbar-custom{
+    background-color: #028391;
+    height: 70px;
+    font-size: 1em;
+    --bs-navbar-color: rgb(255, 255, 255);
+    --bs-navbar-hover-color: brown;
+    --bs-navbar-disabled-color: rgba(255, 255, 255, 0.25);
+    --bs-navbar-active-color: #fff;
+    --bs-navbar-brand-color: #fff;
+    --bs-navbar-brand-hover-color: #fff;
+}
+
+.nav-left{
+    font-size: 1.7em;
+}
+
+.nav-left-text{
+    font-size: 1.1em;
+    /* border: 2px saddlebrown solid; */
+}
+
+.btn:hover {
+    color: var(--bs-btn-hover-color);
+    background-color:cadetblue;
+    border-color: #01204E;
+}
+
+.submit-link{
+    color: white;
+    text-decoration: none;
+}
+
+.btn-custom{
+    color: white;
+    border: 1px solid #01204E;
+    background-color:  #4793AF;
+    box-shadow: 5px,1px,1px, black;
+    text-decoration: none;
+    
+}
+
+

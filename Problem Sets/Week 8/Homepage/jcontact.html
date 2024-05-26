@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #B19470;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 100%;
+            max-width: 1000px;
+            min-height: auto;
+            margin: 50px auto;
+            background: #F8F4E1;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        p {
+            text-align: center;
+            color: #666;
+        }
+        .contact-info {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+        .contact-info li {
+            margin: 10px 0;
+        }
+        .contact-info a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+    </style>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-custom navbar-expand-lg " >
+        <div class="container-fluid" >
+          <a class="navbar-brand nav-left" href="#">Profile</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item ">
+                <a class="nav-link nav-left-text" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item nav-left-text">
+                <a class="nav-link " href="jbout.html">About me</a>
+              </li>
+              <li class="nav-item dropdown nav-left-text ">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  My Skills 
+                </a>
+                <ul class="dropdown-menu ">
+                  <li><a class="dropdown-item" href="xdefault.html">HTML</a></li>
+                  <li><a class="dropdown-item" href="xdefault.html">CSS</a></li>
+                  <li><a class="dropdown-item" href="xdefault.html">Javascipt</a></li>
+  
+                  <!-- <li><hr class="dropdown-divider" /></li> -->
+                  <!-- <li>
+                    <a class="dropdown-item" href="#">Problem Solving</a>
+                  </li> -->
+                </ul>
+              </li>
+  
+              <li class="nav-item nav-left-text">
+                  <a class = "nav-link" href="jcontact.html">Contact</a>
+              </li>
+  
+  
+              <!-- <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li> -->
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success btn-custom" onclick="goToDefault()" type="button" type="submit">
+                <!-- <a class="submit-link" href="xdefault.html"> -->
+                    Search
+                <!-- </a> -->
+            </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container" style="background-color: #F8F4E1;">
+        <h1>Contact Me</h1>
+        <p>I'd love to hear from you! Whether you have a question, feedback, or just want to connect, feel free to reach out.</p>
+        <ul class="contact-info" style="text-align:center; font-weight: 400;">
+            <li>📧 Email: <a href="mailto:anupamchoudhary04@gmail.com">anupamchoudhary04@gmail.com</a></li>
+            <li>📸 Instagram: <a href="https://instagram.com/candycoder" target="_blank">@candycoder</a></li>
+            <li>🐦 Twitter: <a href="https://twitter.com/@Thecandycoder" target="_blank">@TheCandyCoder</a></li>
+            <li>🎮 Discord: <a href="http://discordapp.com/users/brosaidwha_" target="_blank"> brosaidwha_</a></li>
+            <li>📺 YouTube: <a href="https://www.youtube.com/@candycoder" target="_blank">@candycoder</a></li>
+            <li>🐙 GitHub: <a href="https://github.com/Anupam0-0" target="_blank">Anupam0-0</a></li>
+        </ul>
+        <p style="text-align: center;">Looking forward to connecting with you!</p>
+    </div>
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+<!-- Contact Me
+I'd love to hear from you! Whether you have a question, feedback, or just want to connect, feel free to reach out.
+
+📧 Email: anupam@example.com
+📸 Instagram: @candycoder
+🐦 Twitter: @TheCandyCoder
+🔗 LinkedIn: Anupam
+🐙 GitHub: Anupam0-0
+
+Looking forward to connecting with you! -->

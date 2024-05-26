@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(dp.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.main{
+    margin: 40px auto;
+    padding: 10px;
+    text-align: center;
+    /* text-shadow: 0px 1px 40px; */
+}
+
+
+.certificates{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    margin: 0 23vw;
+    border: 2px solid black;
+    justify-content: center;
+    /* align-content: flex-end; */
+    background-color: beige;
+}
+
+.text-certificate{
+    /* border: 2px solid blue; */
+    max-height: auto;
+    justify-content: center;
+    text-align: center;  
+    margin: 1em auto;  
+    margin-bottom: 2em;   
+    overflow:hidden;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    width: 45vw;
+    text-align: center;
+    /* border: 2px solid red; */
+    list-style: none;
+    margin-left: 5vw;
+    margin-bottom: auto;
+    /* display: block; */
+    /* justify-content: center; */
+    align-self: baseline;
+    row-gap: 0.3em;
+    margin-top: 18px;  
+    overflow: auto;
+
+}
+
+.url-link{
+    font-size: large;
+    text-decoration: none;
+}
+
+.CN_CPP, .CN_CSS, .HackerRank_CSS{
+    display: flex;
+    justify-content: center;
+    gap: 1em;  
+}
