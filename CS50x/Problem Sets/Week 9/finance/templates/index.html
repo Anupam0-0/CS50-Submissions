@@ -1,0 +1,71 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Portfolio
+{% endblock %}
+
+{% block main %}
+
+
+
+    <table class="table tablestriped">
+        <thead>
+            <tr>
+                <th class="text-start">Symbol</th>
+                <th class="text-start">Name</th>
+                <th class="text-end">Shares</th>
+                <th class="text-end">Price</th>
+                <th class="text-end">TOTAL</th>
+                <th hidden class="text-end">Outflow Balance</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {% for row in user_portfolio %}
+            <tr>
+                <td class="text-start"> {{ row["symbol"] }} </td>
+                <td class="text-start"> {{ row["name"] }} </td>
+                <td class="text-end"> {{ row["shares"] }} </td>
+                <td class="text-end" id="row_price"> {{ row["price"] | usd }} </td>
+                <td class="text-end" id="row_total"> {{ row["total"] | usd }} </td>
+                <td hidden id="outflow_balance"> {{ row["outflow_balance"] }} </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td class="border-0 fw-bold text-end" colspan="4">Cash</td>
+                <td class="border-0 text-end">{{ cash | usd }}</td>
+                <td hidden class="border-0 text-end"></td>
+            </tr>
+            <tr>
+                <td class="border-0 fw-bold text-end"  colspan="4">TOTAL</td>
+                <td class="border-0 w-bold text-end">{{ grand_total | usd }}</td>
+                <td hidden class="border-0 w-bold text-end"></td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <script>
+
+        // ¡Asu! He usado un montón de métodos para poder hacer matemáticas con esos números
+        // parseFloat para convertirlos en números con decimales, pq eran strings
+        // .slice para quitarle el símbolo de $ a row_total
+        // .replace para quitarle la coma a row_total
+        // .toFixed para limitar outflow_balance a dos dígitos decimales (algunos tienen hartos!!)
+
+        let row_total = document.querySelectorAll("#row_total")
+        let outflow_balance = document.querySelectorAll("#outflow_balance")
+        let row_price = document.querySelectorAll("#row_price")
+        for (let i = 0; i < row_total.length; i++) {
+            if (parseFloat(row_total[i].innerText.slice(1).replace(/,/g, '')) >= parseFloat(outflow_balance[i].innerText).toFixed(2)) {
+                row_price[i].style.color = "blue";
+            } else {
+                row_price[i].style.color = "red";
+            }
+        }
+    </script>
+ 
+
+{% endblock %}
